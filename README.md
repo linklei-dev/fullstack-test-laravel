@@ -30,6 +30,7 @@
 - Desenvolva o front-end o mais próximo possível das imagens de modelo em anexo disponibilizadas aqui.
 - Ao finalizar o teste responda à mesma conversa de email onde enviamos o link do desafio. Inclua na sua resposta o link do seu repositório no github.
 - Todos os recursos gráficos como imagens e ícones, estão disponíveis no diretório [graphics](https://github.com/linklei-dev/fullstack-test-laravel/tree/main/graphics);
+- Desenvolva de forma responsiva, para que toda a aplicação seja bem visualizada e funcional em diferentes dispositivos mobile, smartphones, tablets e desktops.
 - Utilize o padrão de fonte 'Lato', como no exemplo abaixo:
 ```css
 font-family: Lato,'Source Sans Pro';
@@ -77,6 +78,7 @@ font-family: Lato,'Source Sans Pro';
 Recursos adicionais **não obrigatórios** que podem agregar valor ao seu teste.
 - Criar um ambiente em docker para executar a aplicação e o banco de dados;
 - Melhores práticas e uso dos padrões de código aceitos pela comunidade Laravel/PHP/React;
+- Recomendamos a utilização do framework front-end [React Bootstrap](https://react-bootstrap.github.io/), para facilitar a utlização de componentes React;
 - Seja criativo! Recursos adicionais como melhorias no designe, novos componentes ou ferramentas também agregam ao seu teste.
 
 -----------------
