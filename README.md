@@ -25,7 +25,6 @@
 - Busque criar um código bem estruturado, seguindo um padrão e as melhores práticas da comunidade. Sinta-se livre para acrescentar comentários, lembretes, anotações no meio do código, etc. Em um ambiente de desenvolvimento corporativo é fundamental que a equipe compreenda todos os códigos desenvolvidos;
 - Após finalizar, publique no repositório do seu projeto um arquivo completo com o SQL do seu banco utilizado (dump do banco);
 - Não é necessário publicar o projeto em algum servidor.
-- Se preferir, pode criar um ambiente em docker para rodar a aplicação e o banco de dados, será um diferencial em sua avaliação;
 - Insira no seu `README.md` todas as instruções / documentação necessária para executarmos localmente seu projeto para avaliação;
 - Você pode basear o visual da sua aplicação no visual do Feed do [LinkLei](https://linklei.com.br/), basta cadastrar-se no sistema, efetuar login e navegar.
 - Desenvolva o front-end o mais próximo possível das imagens de modelo em anexo disponibilizadas aqui.
@@ -72,3 +71,16 @@ font-family: Lato,'Source Sans Pro';
     - Editar: exiba o conteúdo do post na mesma modal utilizada na ação de Criar;
     - Deletar: solicite uma confirmação de deleção ao usuário antes de remover o post;
   ![Edit Delete Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/edit_delete_post.png?raw=true)
+
+
+## Diferenciais:
+Recursos adicionais **não obrigatórios** que podem agregar valor ao seu teste.
+- Criar um ambiente em docker para executar a aplicação e o banco de dados;
+- Melhores práticas e uso dos padrões de código aceitos pela comunidade Laravel/PHP/React;
+- Seja criativo! Recursos adicionais como melhorias no designe, novos componentes ou ferramentas também agregam ao seu teste.
+
+-----------------
+
+**Bom trabalho ;)**
+
+-----------------
