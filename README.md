@@ -22,6 +22,7 @@
 - Realize as comunicações entre Front e Back desenvolvendo uma API JSON minimalista dentro do Laravel;
 - Não há necessidade de desenvolver recursos de Autenticação, Login, ou quaisquer sistemas de segurança;
 - **O objetivo principal é desenvolver um feed simples de rede social;**
+- Busque criar um código bem estruturado, seguindo um padrão e as melhores práticas da comunidade. Sinta-se livre para acrescentar comentários, lembretes, anotações no meio do código, etc. Em um ambiente de desenvolvimento corporativo é fundamental que a equipe compreenda todos os códigos desenvolvidos;
 - Após finalizar, publique no repositório do seu projeto um arquivo completo com o SQL do seu banco utilizado (dump do banco);
 - Não é necessário publicar o projeto em algum servidor.
 - Se preferir, pode criar um ambiente em docker para rodar a aplicação e o banco de dados, será um diferencial em sua avaliação;
@@ -38,7 +39,7 @@ font-family: Lato,'Source Sans Pro';
 ## Requisitos funcionais da aplicação:
 
 
-## Criar post
+### Criar post
 - O botão **Criar Post** deve abrir a modal para cadastro de post.<br>
 ![Modal Criar Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/modal_create_post.png?raw=true)
 
