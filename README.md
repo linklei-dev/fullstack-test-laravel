@@ -67,6 +67,7 @@ font-family: Lato,'Source Sans Pro';
   - Demais instruções na imagem:
   ![Feed Details](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/feed_detail.png?raw=true)
   - Cria recursos para **Deletar** e **Editar** o post.
+  - Estas funções devem estar em um menu suspenço (estilo dropdown), no canto superior direito do post no feed, como um botão, seguindo o modelo na imagem abaixo.
     - Editar: exiba o conteúdo do post na mesma modal utilizada na ação de Criar;
     - Deletar: solicite uma confirmação de deleção ao usuário antes de remover o post;
   ![Edit Delete Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/edit_delete_post.png?raw=true)
