@@ -7,7 +7,7 @@
 ## Requisitos Gerais:
 
 - Leia todo este arquivo README.md para entender o teste;
-- Inície um novo repositório público em sua conta no github;
+- Inicie um novo repositório público em sua conta no github;
 - Para o back-end utilize:
   - [PHP 7.2+](http://php.net/);
   - [MySQL 5.6+](https://www.mysql.com/);
