@@ -16,7 +16,7 @@
 - Se preferir, pode criar um ambiente em docker para rodar a aplicação e o banco de dados, será um diferencial em sua avaliação;
 - Insira no seu `README.md` todas as instruções / documentação necessária para executarmos localmente seu projeto para avaliação;
 - Você pode basear o visual da sua aplicação no visual do Feed do [LinkLei](https://linklei.com.br/), basta cadastrar-se no sistema, efetuar login e navegar.
-- Desenvolva o front-end o mais próximo possível das imagens de model em anexo: [Template feed](https://), [Modal Criar Post](https://).
+- Desenvolva o front-end o mais próximo possível das imagens de modelo em anexo disponibilizadas aqui.
 - Ao finalizar o teste responda à mesma conversa de email onde enviamos o link do desafio. Inclua na sua resposta o link do seu repositório no github.
 
 ## Requisitos funcionais da aplicação:
@@ -24,7 +24,7 @@
 
 ## Criar post
 - O botão **Criar Post** deve abrir a modal para cadastro de post.<br>
-![Modal Criar Post](https://)
+![Modal Criar Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/modal_create_post.png?raw=true)
 
 - Dentro da Modal:
   - campo **autor do post**: preenchimento obrigatório, campo tipo texto, deve receber o nome do usuário que está publicando.
@@ -41,9 +41,9 @@
 
   ### Navegação no feed.
   - O front-end do feed deve estar de acordo com o modelo abaixo;
-  ![template_feed](https://)
+  ![template_feed](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/template_feed.png?raw=true)
 
   - O feed deve exibir todos os posts criados, em ordem Decrescente (primeiro o post mais recente).
-  - A imagem do usuário deve ser o [avatar_default](https://);
+  - A imagem do usuário deve ser o [avatar_default](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/avatar_default.png?raw=true);
   - 
 
