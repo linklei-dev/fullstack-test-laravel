@@ -9,11 +9,11 @@
 - Leia todo este arquivo README.md para entender o teste;
 - Inicie um novo repositório público em sua conta no github;
 - Para o back-end utilize:
-  - [PHP 7.2+](http://php.net/);
-  - [MySQL 5.6+](https://www.mysql.com/);
-  - Framework [Laravel](https://laravel.com/), [versão 8](https://laravel.com/docs/8.x);
+  - [PHP 7.2+](http://php.net/), ou superior;
+  - [MySQL 5.6+](https://www.mysql.com/), ou superior;
+  - Framework [Laravel](https://laravel.com/), [versão 8](https://laravel.com/docs/8.x), ou superior;
 - Para o front-end utilize:
-  - [React JS v17+](https://pt-br.reactjs.org/);
+  - [React JS v17+](https://pt-br.reactjs.org/), ou superior;
 - Você pode desenvolver o front-end integrado ao Laravel, através dos seguintes recursos:
   - [Compilação JS do Laravel](https://laravel.com/docs/8.x/mix#react) (recomendado)
   - OU
