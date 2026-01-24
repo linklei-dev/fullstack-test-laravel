@@ -24,13 +24,13 @@ services:
 
   Backend:
     build:
-      context: ./Backend
+      context: ./backend
       dockerfile: Dockerfile.apache
     image: backend_laravel:latest
     container_name: backend_laravel
     hostname: Backend_Laravel
     volumes:
-      - ./Backend:/var/www/html
+      - ./backend:/var/www/html
     ports:
       - 8000:80
     depends_on:
@@ -40,6 +40,27 @@ services:
       - TZ=America/Sao_Paulo
     networks:
       - linklei-network
+
+  Frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: frontend_react:latest
+    container_name: frontend_react
+    hostname: Frontend_React
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - 5173:5173
+    restart: always
+    environment:
+      - TZ=America/Sao_Paulo
+      - NODE_ENV=development
+    networks:
+      - linklei-network
+    stdin_open: true
+    tty: true
 
 networks:
   linklei-network:
