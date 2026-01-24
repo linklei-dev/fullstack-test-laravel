@@ -26,6 +26,7 @@ services:
     build:
       context: ./Backend
       dockerfile: Dockerfile.apache
+    image: backend_laravel:latest
     container_name: backend_laravel
     hostname: Backend_Laravel
     volumes:
