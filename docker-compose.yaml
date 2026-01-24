@@ -1,27 +1,5 @@
 
 services:
-  Servidor_Linklei:
-    hostname: Servidor_Linklei
-    container_name: servidor_linklei
-    image: mysql:8.0
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    ports:
-      - 3307:3306
-    deploy:
-      resources:
-        limits:
-          cpus: '0.95'
-          memory: 4GB
-    restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=linklei
-      - MYSQL_USER=user2
-      - MYSQL_PASSWORD=senha
-      - TZ=America/Sao_Paulo
-    networks:
-      - linklei-network
-
   Backend:
     build:
       context: ./backend
@@ -33,13 +11,13 @@ services:
       - ./backend:/var/www/html
     ports:
       - 8000:80
-    depends_on:
-      - Servidor_Linklei
     restart: always
     environment:
       - TZ=America/Sao_Paulo
     networks:
       - linklei-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   Frontend:
     build:
