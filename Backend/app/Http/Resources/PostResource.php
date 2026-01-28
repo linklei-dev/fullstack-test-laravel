@@ -6,15 +6,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class PostResource extends JsonResource
 {
-    /**
-     * Transform the resource into an array.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
-     */
     public function toArray($request)
     {
-        // Obter a primeira imagem em base64, se existir
         $imagem = null;
         if ($this->imagens && $this->imagens->count() > 0) {
             $primeiraImagem = $this->imagens->first();

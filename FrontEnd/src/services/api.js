@@ -1,9 +1,9 @@
 const API_BASE_URL = 'http://localhost:8000/api';
 
 export const api = {
-  // Buscar todos os posts
-  getPosts: async () => {
-    const response = await fetch(`${API_BASE_URL}/posts`, {
+  getPosts: async (page = 1, perPage = 15) => {
+    const params = new URLSearchParams({ page: String(page), per_page: String(perPage) });
+    const response = await fetch(`${API_BASE_URL}/posts?${params}`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -17,7 +17,6 @@ export const api = {
     return response.json();
   },
 
-  // Criar novo post
   createPost: async (postData) => {
     const response = await fetch(`${API_BASE_URL}/posts`, {
       method: 'POST',
@@ -36,7 +35,6 @@ export const api = {
     return response.json();
   },
 
-  // Atualizar post
   updatePost: async (postId, postData) => {
     const response = await fetch(`${API_BASE_URL}/posts/${postId}`, {
       method: 'PUT',
@@ -55,7 +53,6 @@ export const api = {
     return response.json();
   },
 
-  // Deletar post
   deletePost: async (postId) => {
     const response = await fetch(`${API_BASE_URL}/posts/${postId}`, {
       method: 'DELETE',

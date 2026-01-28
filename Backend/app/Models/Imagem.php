@@ -9,45 +9,22 @@ class Imagem extends Model
 {
     use HasFactory;
 
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
     protected $table = 'imagens';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'imagem',
         'post_id',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
-        'imagem', // Ocultar o binário, mostrar apenas base64
+        'imagem',
     ];
 
-    /**
-     * Get the post that owns the image.
-     */
     public function post()
     {
         return $this->belongsTo(Post::class);
     }
 
-    /**
-     * Get the image as base64 string.
-     *
-     * @return string|null
-     */
     public function getImagemBase64Attribute()
     {
         if ($this->imagem) {
@@ -56,10 +33,5 @@ class Imagem extends Model
         return null;
     }
 
-    /**
-     * Append the base64 image to the array representation.
-     *
-     * @var array
-     */
     protected $appends = ['imagem_base64'];
 }

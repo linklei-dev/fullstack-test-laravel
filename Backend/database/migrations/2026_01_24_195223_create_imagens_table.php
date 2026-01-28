@@ -7,11 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class CreateImagensTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('imagens', function (Blueprint $table) {
@@ -19,15 +14,9 @@ class CreateImagensTable extends Migration
             $table->timestamps();
         });
         
-        // Adicionar campo MEDIUMBLOB usando SQL direto
         DB::statement('ALTER TABLE imagens ADD imagem MEDIUMBLOB AFTER id');
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('imagens');
