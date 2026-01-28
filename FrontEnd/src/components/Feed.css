@@ -1,0 +1,28 @@
+.feed {
+  width: 100%;
+}
+
+.feed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feed-list li {
+  margin-bottom: 0;
+}
+
+.feed-loading,
+.feed-loading-more,
+.feed-optimistic-hint {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.feed-sentinel {
+  height: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -1,0 +1,135 @@
+.post-card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.post-card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.post-card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-card-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.post-card-author {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.post-card-category {
+  font-size: 13px;
+  color: var(--color-muted);
+  text-transform: capitalize;
+}
+
+.post-card-actions {
+  position: relative;
+}
+
+.post-card-menu-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card-menu-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.post-card-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.post-card-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 2;
+  min-width: 140px;
+  overflow: hidden;
+}
+
+.post-card-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.post-card-menu button:hover {
+  background: var(--color-bg);
+}
+
+.post-card-menu button img {
+  width: 18px;
+  height: 18px;
+}
+
+.post-card-body {
+  padding: 0 16px 16px;
+}
+
+.post-card-text {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.post-card-leia-mais {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.post-card-image-wrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.post-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
